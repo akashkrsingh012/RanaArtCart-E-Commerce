@@ -1,0 +1,8 @@
+1:"$Sreact.fragment"
+2:I[19711,["/_next/static/chunks/4f95c3a0f2c2720d.js","/_next/static/chunks/ab9658dceab1b5a2.js"],"ViewportBoundary"]
+4:I[19711,["/_next/static/chunks/4f95c3a0f2c2720d.js","/_next/static/chunks/ab9658dceab1b5a2.js"],"MetadataBoundary"]
+5:"$Sreact.suspense"
+7:I[28448,["/_next/static/chunks/4f95c3a0f2c2720d.js","/_next/static/chunks/ab9658dceab1b5a2.js"],"IconMark"]
+0:{"buildId":"G2Wwr9cm61xjT456xkr7c","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, user-scalable=no"}],["$","meta","2",{"name":"theme-color","content":"#8B6F47"}]]
+6:[["$","title","0",{"children":"ranaartcart - Handmade Arts Marketplace"}],["$","meta","1",{"name":"description","content":"Discover authentic handmade arts, crafts, and artisanal products from talented artisans"}],["$","meta","2",{"name":"generator","content":"v0.app"}],["$","link","3",{"rel":"icon","href":"/icon-light-32x32.png","media":"(prefers-color-scheme: light)"}],["$","link","4",{"rel":"icon","href":"/icon-dark-32x32.png","media":"(prefers-color-scheme: dark)"}],["$","link","5",{"rel":"icon","href":"/icon.svg","type":"image/svg+xml"}],["$","link","6",{"rel":"apple-touch-icon","href":"/apple-icon.png"}],["$","$L7","7",{}]]
