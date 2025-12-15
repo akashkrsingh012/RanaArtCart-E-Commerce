@@ -92,7 +92,7 @@ function Hero() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         href: "#products",
                                         className: "bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-3.5 rounded-full font-semibold hover:bg-white/20 transition-all duration-300 inline-block text-center",
-                                        children: "View Collections"
+                                        children: "View Collection"
                                     }, void 0, false, {
                                         fileName: "[project]/handmade-arts-e-commerce/components/hero.tsx",
                                         lineNumber: 45,

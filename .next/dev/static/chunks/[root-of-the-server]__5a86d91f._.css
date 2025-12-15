@@ -286,6 +286,7 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --tracking-tight: -.025em;
     --tracking-wide: .025em;
     --tracking-wider: .05em;
@@ -850,6 +851,10 @@
 
   .left-3 {
     left: calc(var(--spacing) * 3);
+  }
+
+  .left-4 {
+    left: calc(var(--spacing) * 4);
   }
 
   .left-64 {
@@ -1543,6 +1548,10 @@
     min-width: calc(var(--spacing) * 10);
   }
 
+  .min-w-\[3rem\] {
+    min-width: 3rem;
+  }
+
   .min-w-\[8rem\] {
     min-width: 8rem;
   }
@@ -1741,10 +1750,6 @@
 
   .scroll-py-1 {
     scroll-padding-block: calc(var(--spacing) * 1);
-  }
-
-  .list-inside {
-    list-style-position: inside;
   }
 
   .list-disc {
@@ -2792,6 +2797,10 @@
     object-fit: cover;
   }
 
+  .object-center {
+    object-position: center;
+  }
+
   .p-0 {
     padding: calc(var(--spacing) * 0);
   }
@@ -3138,6 +3147,11 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
   }
 
   .font-light {
@@ -4644,8 +4658,20 @@
   }
 
   @media (hover: hover) {
+    .hover\:text-primary:hover {
+      color: var(--primary);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:text-primary-foreground:hover {
       color: var(--primary-foreground);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-red-500:hover {
+      color: var(--color-red-500);
     }
   }
 
@@ -6217,6 +6243,12 @@
   @media (min-width: 64rem) {
     .lg\:grid-cols-4 {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:gap-16 {
+      gap: calc(var(--spacing) * 16);
     }
   }
 
