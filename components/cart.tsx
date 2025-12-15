@@ -3,6 +3,7 @@
 import { X, Trash2, Plus, Minus, CreditCard, Truck, Bell } from "lucide-react"
 import { useCart } from "@/hooks/use-cart"
 import { useUser } from "@/contexts/user-context"
+import { useRouter } from "next/navigation"
 import { useState } from "react"
 
 interface CartProps {
@@ -12,6 +13,7 @@ interface CartProps {
 export default function Cart({ onClose }: CartProps) {
   const { items, removeItem, updateQuantity, clearCart } = useCart()
   const { user, addOrder } = useUser()
+  const router = useRouter()
   const [checkoutStep, setCheckoutStep] = useState<"cart" | "shipping" | "payment" | "confirmation">("cart")
   const [customerInfo, setCustomerInfo] = useState({
     name: user?.name || "",
@@ -112,7 +114,7 @@ export default function Cart({ onClose }: CartProps) {
   }
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-end z-50">
+    <div className="fixed inset-0 bg-black/50 flex justify-end z-50">
       <div className="bg-card w-full max-w-md h-full overflow-y-auto flex flex-col">
         {/* Header */}
         <div className="sticky top-0 flex items-center justify-between p-4 border-b border-border bg-card">
@@ -244,11 +246,10 @@ export default function Cart({ onClose }: CartProps) {
                 ].map((method) => (
                   <label
                     key={method.id}
-                    className={`flex items-center gap-3 p-3 border rounded-lg cursor-pointer transition-colors ${
-                      shippingMethod === method.id
-                        ? "bg-primary bg-opacity-10 border-primary"
-                        : "border-border hover:bg-muted"
-                    }`}
+                    className={`flex items-center gap-3 p-3 border rounded-lg cursor-pointer transition-colors ${shippingMethod === method.id
+                      ? "bg-primary bg-opacity-10 border-primary"
+                      : "border-border hover:bg-muted"
+                      }`}
                   >
                     <input
                       type="radio"
@@ -280,11 +281,10 @@ export default function Cart({ onClose }: CartProps) {
                 ].map((method) => (
                   <label
                     key={method.id}
-                    className={`flex items-center gap-3 p-3 border rounded-lg cursor-pointer transition-colors ${
-                      paymentMethod === method.id
-                        ? "bg-primary bg-opacity-10 border-primary"
-                        : "border-border hover:bg-muted"
-                    }`}
+                    className={`flex items-center gap-3 p-3 border rounded-lg cursor-pointer transition-colors ${paymentMethod === method.id
+                      ? "bg-primary bg-opacity-10 border-primary"
+                      : "border-border hover:bg-muted"
+                      }`}
                   >
                     <input
                       type="radio"
@@ -375,14 +375,15 @@ export default function Cart({ onClose }: CartProps) {
               <button
                 onClick={() => {
                   if (user) {
-                    setCheckoutStep("shipping")
+                    onClose()
+                    router.push("/choose-seller")
                   } else {
                     alert("Please login to continue")
                   }
                 }}
                 className="w-full bg-primary text-primary-foreground py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity"
               >
-                Continue to Shipping
+                Choose Seller
               </button>
             </>
           )}

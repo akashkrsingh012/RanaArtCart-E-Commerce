@@ -68,13 +68,13 @@ export default function Header({ cartOpen, onCartToggle }: HeaderProps) {
             <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
               <div className="relative w-10 h-10 overflow-hidden rounded-xl shadow-sm group-hover:shadow-md transition-all duration-300 bg-orange-50 flex items-center justify-center border border-orange-100/50">
                 {/* Using icon.svg as side logo */}
-                <img src="/icon.svg" alt="RanaArtCart Logo" className="w-7 h-7 object-contain transform group-hover:scale-110 transition-transform duration-300" />
+                <img src="/logo_new.png" alt="RanaArtCart Logo" className="w-10 h-10 object-contain transform group-hover:scale-110 transition-transform duration-300" />
               </div>
               <div className="flex flex-col">
-                <h1 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-neutral-800 to-neutral-600 bg-clip-text text-transparent group-hover:from-orange-600 group-hover:to-orange-500 transition-all duration-300">
+                <h1 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-500 bg-clip-text text-transparent group-hover:from-orange-700 group-hover:via-amber-700 group-hover:to-yellow-600 transition-all duration-300 drop-shadow-sm">
                   RanaArtCart
                 </h1>
-                <p className="text-[10px] uppercase tracking-widest text-neutral-400 font-medium group-hover:text-orange-400 transition-colors">
+                <p className="text-[10px] uppercase tracking-widest text-orange-600/70 font-bold group-hover:text-orange-600 transition-colors">
                   Handmade with Love
                 </p>
               </div>

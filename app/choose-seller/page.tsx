@@ -6,13 +6,24 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import SellerCarousel from "@/components/SellerCarousel"
 
+interface Product {
+    id: string
+    name: string
+}
+
+interface Seller {
+    id: string
+    businessName: string
+    [key: string]: any
+}
+
 export default function ChooseSellerPage() {
     const router = useRouter()
     const searchParams = useSearchParams()
     const productId = searchParams.get("productId")
 
-    const [product, setProduct] = useState(null)
-    const [sellers, setSellers] = useState([])
+    const [product, setProduct] = useState<Product | null>(null)
+    const [sellers, setSellers] = useState<Seller[]>([])
     const [selectedSellerId, setSelectedSellerId] = useState(null)
     const [loading, setLoading] = useState(true)
 
@@ -20,7 +31,7 @@ export default function ChooseSellerPage() {
         const fetchData = async () => {
             setLoading(true)
             try {
-                // Fetch Product Details
+                // Fetch Product Details only if productId exists
                 if (productId) {
                     const productRes = await fetch(`/api/products/${productId}`)
                     if (productRes.ok) {
@@ -29,7 +40,7 @@ export default function ChooseSellerPage() {
                     }
                 }
 
-                // Fetch Verified Sellers
+                // Always Fetch Verified Sellers
                 const sellersRes = await fetch("/api/sellers")
                 if (sellersRes.ok) {
                     const data = await sellersRes.json()
@@ -42,14 +53,23 @@ export default function ChooseSellerPage() {
             }
         }
 
-        if (productId) {
-            fetchData()
-        }
+        fetchData()
     }, [productId])
 
     const handleProceed = () => {
-        if (!selectedSellerId || !productId) return
-        router.push(`/checkout?productId=${productId}&sellerId=${selectedSellerId}`)
+        if (!selectedSellerId) return
+
+        // If productId exists, it's a "Buy Now" flow
+        if (productId) {
+            router.push(`/checkout?productId=${productId}&sellerId=${selectedSellerId}`)
+        } else {
+            // Otherwise, it's a "Cart Checkout" flow - we pass sellerId context
+            // Note: In a real app, you might save this to context/session, 
+            // but passing as query param works if checkout page looks for it or we just proceed.
+            // Currently checkout uses cart items by default if no productId.
+            // We pass sellerId just in case future logic needs it.
+            router.push(`/checkout?sellerId=${selectedSellerId}`)
+        }
     }
 
     if (loading) {
@@ -59,17 +79,6 @@ export default function ChooseSellerPage() {
                     <div className="h-12 w-12 bg-gray-200 rounded-full mb-4"></div>
                     <p className="text-muted-foreground">Loading artisans...</p>
                 </div>
-            </div>
-        )
-    }
-
-    if (!productId || !product) {
-        return (
-            <div className="min-h-screen flex items-center justify-center bg-background">
-                <p className="text-muted-foreground">Product not found.</p>
-                <Button variant="link" onClick={() => router.push("/")}>
-                    Return Home
-                </Button>
             </div>
         )
     }
@@ -96,9 +105,19 @@ export default function ChooseSellerPage() {
                         Choose a Seller
                     </h1>
                     <p className="text-lg text-muted-foreground">
-                        Select the best artisan to craft your <strong>{product.name}</strong>.
-                        <br className="hidden sm:block" />
-                        Review their ratings, stories, and verified status below.
+                        {product ? (
+                            <>
+                                Select the best artisan to craft your <strong>{product.name}</strong>.
+                                <br className="hidden sm:block" />
+                                Review their ratings, stories, and verified status below.
+                            </>
+                        ) : (
+                            <>
+                                Select an artisan to support with your order.
+                                <br className="hidden sm:block" />
+                                Your purchase directly empowers these talented creators.
+                            </>
+                        )}
                     </p>
                 </div>
 

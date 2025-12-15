@@ -1089,9 +1089,9 @@ function Header({ cartOpen, onCartToggle }) {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "relative w-10 h-10 overflow-hidden rounded-xl shadow-sm group-hover:shadow-md transition-all duration-300 bg-orange-50 flex items-center justify-center border border-orange-100/50",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                src: "/icon.svg",
+                                                src: "/logo_new.png",
                                                 alt: "RanaArtCart Logo",
-                                                className: "w-7 h-7 object-contain transform group-hover:scale-110 transition-transform duration-300"
+                                                className: "w-10 h-10 object-contain transform group-hover:scale-110 transition-transform duration-300"
                                             }, void 0, false, {
                                                 fileName: "[project]/handmade-arts-e-commerce/components/header.tsx",
                                                 lineNumber: 71,
@@ -1106,7 +1106,7 @@ function Header({ cartOpen, onCartToggle }) {
                                             className: "flex flex-col",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                                    className: "text-2xl font-bold tracking-tight bg-gradient-to-r from-neutral-800 to-neutral-600 bg-clip-text text-transparent group-hover:from-orange-600 group-hover:to-orange-500 transition-all duration-300",
+                                                    className: "text-2xl font-bold tracking-tight bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-500 bg-clip-text text-transparent group-hover:from-orange-700 group-hover:via-amber-700 group-hover:to-yellow-600 transition-all duration-300 drop-shadow-sm",
                                                     children: "RanaArtCart"
                                                 }, void 0, false, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/header.tsx",
@@ -1114,7 +1114,7 @@ function Header({ cartOpen, onCartToggle }) {
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-[10px] uppercase tracking-widest text-neutral-400 font-medium group-hover:text-orange-400 transition-colors",
+                                                    className: "text-[10px] uppercase tracking-widest text-orange-600/70 font-bold group-hover:text-orange-600 transition-colors",
                                                     children: "Handmade with Love"
                                                 }, void 0, false, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/header.tsx",
@@ -1903,6 +1903,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$com
 var __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bell$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bell$3e$__ = __turbopack_context__.i("[project]/handmade-arts-e-commerce/node_modules/lucide-react/dist/esm/icons/bell.js [app-client] (ecmascript) <export default as Bell>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$hooks$2f$use$2d$cart$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/handmade-arts-e-commerce/hooks/use-cart.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$contexts$2f$user$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/handmade-arts-e-commerce/contexts/user-context.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/handmade-arts-e-commerce/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/handmade-arts-e-commerce/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -1911,10 +1912,12 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 function Cart({ onClose }) {
     _s();
     const { items, removeItem, updateQuantity, clearCart } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$hooks$2f$use$2d$cart$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCart"])();
     const { user, addOrder } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$contexts$2f$user$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUser"])();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const [checkoutStep, setCheckoutStep] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("cart");
     const [customerInfo, setCustomerInfo] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
         name: user?.name || "",
@@ -1966,7 +1969,7 @@ function Cart({ onClose }) {
                         children: "✓"
                     }, void 0, false, {
                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                        lineNumber: 75,
+                        lineNumber: 77,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1974,7 +1977,7 @@ function Cart({ onClose }) {
                         children: "Order Confirmed!"
                     }, void 0, false, {
                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                        lineNumber: 76,
+                        lineNumber: 78,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1985,7 +1988,7 @@ function Cart({ onClose }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                        lineNumber: 77,
+                        lineNumber: 79,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1999,7 +2002,7 @@ function Cart({ onClose }) {
                                         className: "text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                        lineNumber: 82,
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2010,13 +2013,13 @@ function Cart({ onClose }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 85,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 81,
+                                lineNumber: 83,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2027,7 +2030,7 @@ function Cart({ onClose }) {
                                         className: "text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                        lineNumber: 88,
+                                        lineNumber: 90,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2039,13 +2042,13 @@ function Cart({ onClose }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                        lineNumber: 89,
+                                        lineNumber: 91,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 87,
+                                lineNumber: 89,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2056,7 +2059,7 @@ function Cart({ onClose }) {
                                         className: "text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                        lineNumber: 99,
+                                        lineNumber: 101,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2064,19 +2067,19 @@ function Cart({ onClose }) {
                                         children: "Notifications enabled"
                                     }, void 0, false, {
                                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                        lineNumber: 100,
+                                        lineNumber: 102,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 98,
+                                lineNumber: 100,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                        lineNumber: 80,
+                        lineNumber: 82,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2085,23 +2088,23 @@ function Cart({ onClose }) {
                         children: "Continue Shopping"
                     }, void 0, false, {
                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                        lineNumber: 103,
+                        lineNumber: 105,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                lineNumber: 74,
+                lineNumber: 76,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-            lineNumber: 73,
+            lineNumber: 75,
             columnNumber: 7
         }, this);
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "fixed inset-0 bg-black bg-opacity-50 flex justify-end z-50",
+        className: "fixed inset-0 bg-black/50 flex justify-end z-50",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "bg-card w-full max-w-md h-full overflow-y-auto flex flex-col",
             children: [
@@ -2113,7 +2116,7 @@ function Cart({ onClose }) {
                             children: checkoutStep === "cart" ? "Shopping Cart" : checkoutStep === "shipping" ? "Shipping Details" : "Payment"
                         }, void 0, false, {
                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                            lineNumber: 119,
+                            lineNumber: 121,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2124,18 +2127,18 @@ function Cart({ onClose }) {
                                 size: 20
                             }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 123,
+                                lineNumber: 125,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                            lineNumber: 122,
+                            lineNumber: 124,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                    lineNumber: 118,
+                    lineNumber: 120,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2147,7 +2150,7 @@ function Cart({ onClose }) {
                                 className: `flex-1 h-1 rounded-full ${checkoutStep === "cart" ? "bg-primary" : "bg-muted"}`
                             }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 130,
+                                lineNumber: 132,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2158,25 +2161,25 @@ function Cart({ onClose }) {
                                 ].includes(checkoutStep) ? "bg-primary" : "bg-muted"}`
                             }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 131,
+                                lineNumber: 133,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: `flex-1 h-1 rounded-full ${checkoutStep === "payment" || checkoutStep === "confirmation" ? "bg-primary" : "bg-muted"}`
                             }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 134,
+                                lineNumber: 136,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                        lineNumber: 129,
+                        lineNumber: 131,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                    lineNumber: 128,
+                    lineNumber: 130,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2189,12 +2192,12 @@ function Cart({ onClose }) {
                                 children: "Your cart is empty"
                             }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 146,
+                                lineNumber: 148,
                                 columnNumber: 19
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                            lineNumber: 145,
+                            lineNumber: 147,
                             columnNumber: 17
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "space-y-4",
@@ -2207,7 +2210,7 @@ function Cart({ onClose }) {
                                             className: "w-20 h-20 object-cover rounded-lg"
                                         }, void 0, false, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 152,
+                                            lineNumber: 154,
                                             columnNumber: 23
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2218,7 +2221,7 @@ function Cart({ onClose }) {
                                                     children: item.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                    lineNumber: 158,
+                                                    lineNumber: 160,
                                                     columnNumber: 25
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2229,7 +2232,7 @@ function Cart({ onClose }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                    lineNumber: 159,
+                                                    lineNumber: 161,
                                                     columnNumber: 25
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2243,12 +2246,12 @@ function Cart({ onClose }) {
                                                                 size: 14
                                                             }, void 0, false, {
                                                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                                lineNumber: 166,
+                                                                lineNumber: 168,
                                                                 columnNumber: 29
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                            lineNumber: 161,
+                                                            lineNumber: 163,
                                                             columnNumber: 27
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2256,7 +2259,7 @@ function Cart({ onClose }) {
                                                             children: item.quantity
                                                         }, void 0, false, {
                                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                            lineNumber: 168,
+                                                            lineNumber: 170,
                                                             columnNumber: 27
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2267,12 +2270,12 @@ function Cart({ onClose }) {
                                                                 size: 14
                                                             }, void 0, false, {
                                                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                                lineNumber: 174,
+                                                                lineNumber: 176,
                                                                 columnNumber: 29
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                            lineNumber: 169,
+                                                            lineNumber: 171,
                                                             columnNumber: 27
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2283,35 +2286,35 @@ function Cart({ onClose }) {
                                                                 size: 14
                                                             }, void 0, false, {
                                                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                                lineNumber: 181,
+                                                                lineNumber: 183,
                                                                 columnNumber: 29
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                            lineNumber: 176,
+                                                            lineNumber: 178,
                                                             columnNumber: 27
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                    lineNumber: 160,
+                                                    lineNumber: 162,
                                                     columnNumber: 25
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 157,
+                                            lineNumber: 159,
                                             columnNumber: 23
                                         }, this)
                                     ]
                                 }, item.id, true, {
                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                    lineNumber: 151,
+                                    lineNumber: 153,
                                     columnNumber: 21
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                            lineNumber: 149,
+                            lineNumber: 151,
                             columnNumber: 17
                         }, this)
                     }, void 0, false) : checkoutStep === "shipping" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2322,7 +2325,7 @@ function Cart({ onClose }) {
                                 children: "Delivery Address"
                             }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 192,
+                                lineNumber: 194,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2336,7 +2339,7 @@ function Cart({ onClose }) {
                                 className: "w-full px-3 py-2 bg-input text-foreground placeholder-muted-foreground rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary text-sm"
                             }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 193,
+                                lineNumber: 195,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2350,7 +2353,7 @@ function Cart({ onClose }) {
                                 className: "w-full px-3 py-2 bg-input text-foreground placeholder-muted-foreground rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary text-sm"
                             }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 200,
+                                lineNumber: 202,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2364,7 +2367,7 @@ function Cart({ onClose }) {
                                 className: "w-full px-3 py-2 bg-input text-foreground placeholder-muted-foreground rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary text-sm"
                             }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 207,
+                                lineNumber: 209,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -2378,7 +2381,7 @@ function Cart({ onClose }) {
                                 rows: 2
                             }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 214,
+                                lineNumber: 216,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2395,7 +2398,7 @@ function Cart({ onClose }) {
                                         className: "px-3 py-2 bg-input text-foreground placeholder-muted-foreground rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary text-sm"
                                     }, void 0, false, {
                                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                        lineNumber: 222,
+                                        lineNumber: 224,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2409,13 +2412,13 @@ function Cart({ onClose }) {
                                         className: "px-3 py-2 bg-input text-foreground placeholder-muted-foreground rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary text-sm"
                                     }, void 0, false, {
                                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                        lineNumber: 229,
+                                        lineNumber: 231,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 221,
+                                lineNumber: 223,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2423,7 +2426,7 @@ function Cart({ onClose }) {
                                 children: "Shipping Method"
                             }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 238,
+                                lineNumber: 240,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2459,7 +2462,7 @@ function Cart({ onClose }) {
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                lineNumber: 253,
+                                                lineNumber: 254,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2470,7 +2473,7 @@ function Cart({ onClose }) {
                                                         children: method.label
                                                     }, void 0, false, {
                                                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                        lineNumber: 262,
+                                                        lineNumber: 263,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2478,13 +2481,13 @@ function Cart({ onClose }) {
                                                         children: method.time
                                                     }, void 0, false, {
                                                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                        lineNumber: 263,
+                                                        lineNumber: 264,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                lineNumber: 261,
+                                                lineNumber: 262,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2492,24 +2495,24 @@ function Cart({ onClose }) {
                                                 children: method.cost === 0 ? "FREE" : `₹${method.cost}`
                                             }, void 0, false, {
                                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                lineNumber: 265,
+                                                lineNumber: 266,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, method.id, true, {
                                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                        lineNumber: 245,
+                                        lineNumber: 247,
                                         columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 239,
+                                lineNumber: 241,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                        lineNumber: 191,
+                        lineNumber: 193,
                         columnNumber: 13
                     }, this) : checkoutStep === "payment" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "space-y-4",
@@ -2519,7 +2522,7 @@ function Cart({ onClose }) {
                                 children: "Payment Method"
                             }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 274,
+                                lineNumber: 275,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2579,12 +2582,12 @@ function Cart({ onClose }) {
                                         ]
                                     }, method.id, true, {
                                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                        lineNumber: 281,
+                                        lineNumber: 282,
                                         columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                lineNumber: 275,
+                                lineNumber: 276,
                                 columnNumber: 15
                             }, this),
                             paymentMethod === "card" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2646,7 +2649,7 @@ function Cart({ onClose }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                        lineNumber: 273,
+                        lineNumber: 274,
                         columnNumber: 13
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "space-y-4",
@@ -2718,7 +2721,7 @@ function Cart({ onClose }) {
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                    lineNumber: 141,
+                    lineNumber: 143,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2839,13 +2842,14 @@ function Cart({ onClose }) {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: ()=>{
                                         if (user) {
-                                            setCheckoutStep("shipping");
+                                            onClose();
+                                            router.push("/choose-seller");
                                         } else {
                                             alert("Please login to continue");
                                         }
                                     },
                                     className: "w-full bg-primary text-primary-foreground py-2 rounded-lg font-semibold hover:opacity-90 transition-opacity",
-                                    children: "Continue to Shipping"
+                                    children: "Choose Seller"
                                 }, void 0, false, {
                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
                                     lineNumber: 375,
@@ -2865,7 +2869,7 @@ function Cart({ onClose }) {
                                                     children: "Subtotal"
                                                 }, void 0, false, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                    lineNumber: 393,
+                                                    lineNumber: 394,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2875,13 +2879,13 @@ function Cart({ onClose }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                    lineNumber: 394,
+                                                    lineNumber: 395,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 392,
+                                            lineNumber: 393,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2891,20 +2895,20 @@ function Cart({ onClose }) {
                                                     children: "Shipping"
                                                 }, void 0, false, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                    lineNumber: 397,
+                                                    lineNumber: 398,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: shippingCost === 0 ? "Free" : `₹${shippingCost}`
                                                 }, void 0, false, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                    lineNumber: 398,
+                                                    lineNumber: 399,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 396,
+                                            lineNumber: 397,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2914,7 +2918,7 @@ function Cart({ onClose }) {
                                                     children: "Tax (18%)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                    lineNumber: 401,
+                                                    lineNumber: 402,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2924,19 +2928,19 @@ function Cart({ onClose }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                    lineNumber: 402,
+                                                    lineNumber: 403,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 400,
+                                            lineNumber: 401,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                    lineNumber: 391,
+                                    lineNumber: 392,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2946,7 +2950,7 @@ function Cart({ onClose }) {
                                             children: "Total"
                                         }, void 0, false, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 406,
+                                            lineNumber: 407,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2956,13 +2960,13 @@ function Cart({ onClose }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 407,
+                                            lineNumber: 408,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                    lineNumber: 405,
+                                    lineNumber: 406,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2974,7 +2978,7 @@ function Cart({ onClose }) {
                                             children: "Back"
                                         }, void 0, false, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 410,
+                                            lineNumber: 411,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2983,13 +2987,13 @@ function Cart({ onClose }) {
                                             children: "Continue to Payment"
                                         }, void 0, false, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 416,
+                                            lineNumber: 417,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                    lineNumber: 409,
+                                    lineNumber: 410,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -3006,7 +3010,7 @@ function Cart({ onClose }) {
                                                     children: "Subtotal"
                                                 }, void 0, false, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                    lineNumber: 429,
+                                                    lineNumber: 430,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3016,13 +3020,13 @@ function Cart({ onClose }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                    lineNumber: 430,
+                                                    lineNumber: 431,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 428,
+                                            lineNumber: 429,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3032,20 +3036,20 @@ function Cart({ onClose }) {
                                                     children: "Shipping"
                                                 }, void 0, false, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                    lineNumber: 433,
+                                                    lineNumber: 434,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: shippingCost === 0 ? "Free" : `₹${shippingCost}`
                                                 }, void 0, false, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                    lineNumber: 434,
+                                                    lineNumber: 435,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 432,
+                                            lineNumber: 433,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3055,7 +3059,7 @@ function Cart({ onClose }) {
                                                     children: "Tax (18%)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                    lineNumber: 437,
+                                                    lineNumber: 438,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3065,19 +3069,19 @@ function Cart({ onClose }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                                    lineNumber: 438,
+                                                    lineNumber: 439,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 436,
+                                            lineNumber: 437,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                    lineNumber: 427,
+                                    lineNumber: 428,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3087,7 +3091,7 @@ function Cart({ onClose }) {
                                             children: "Total"
                                         }, void 0, false, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 442,
+                                            lineNumber: 443,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3097,13 +3101,13 @@ function Cart({ onClose }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 443,
+                                            lineNumber: 444,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                    lineNumber: 441,
+                                    lineNumber: 442,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3115,7 +3119,7 @@ function Cart({ onClose }) {
                                             children: "Back"
                                         }, void 0, false, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 446,
+                                            lineNumber: 447,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3124,13 +3128,13 @@ function Cart({ onClose }) {
                                             children: "Complete Payment"
                                         }, void 0, false, {
                                             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                            lineNumber: 452,
+                                            lineNumber: 453,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-                                    lineNumber: 445,
+                                    lineNumber: 446,
                                     columnNumber: 15
                                 }, this)
                             ]
@@ -3144,19 +3148,20 @@ function Cart({ onClose }) {
             ]
         }, void 0, true, {
             fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-            lineNumber: 116,
+            lineNumber: 118,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/handmade-arts-e-commerce/components/cart.tsx",
-        lineNumber: 115,
+        lineNumber: 117,
         columnNumber: 5
     }, this);
 }
-_s(Cart, "t5mCAQ8JdLgQ/DXBeX5CjU6JGww=", false, function() {
+_s(Cart, "fPXDjX3jCnr0iwKZea2/2uPrk8g=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$hooks$2f$use$2d$cart$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCart"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$contexts$2f$user$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUser"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$contexts$2f$user$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useUser"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
 });
 _c = Cart;

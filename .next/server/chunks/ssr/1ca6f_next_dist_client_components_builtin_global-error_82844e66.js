@@ -1,0 +1,3 @@
+module.exports=[83834,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(56539);a.n(d("[project]/handmade-arts-e-commerce/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},45304,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(56539);a.n(d("[project]/handmade-arts-e-commerce/node_modules/next/dist/client/components/builtin/global-error.js"))},45623,a=>{"use strict";a.i(83834);var b=a.i(45304);a.n(b)}];
+
+//# sourceMappingURL=1ca6f_next_dist_client_components_builtin_global-error_82844e66.js.map

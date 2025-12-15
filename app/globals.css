@@ -1,4 +1,9 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* removed tw-animate-css import that was causing transition-smooth error */
 
 @custom-variant dark (&:is(.dark *));
@@ -117,6 +122,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

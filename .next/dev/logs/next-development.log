@@ -1,10 +1,2789 @@
-[00:00:00.589] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:00.663] Server  WARN     ⚠ Duplicate page detected. app/admin/(protected)/dashboard/page.jsx and app/admin/(protected)/dashboard/page.tsx resolve to /admin/dashboard
-[00:00:00.663] Server  WARN     ⚠ Duplicate page detected. app/admin/(protected)/dashboard/page.jsx and app/admin/(protected)/dashboard/page.tsx resolve to /admin/dashboard
-[00:00:00.663] Server  LOG      ✓ Ready in 481ms
-[00:00:06.498] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:06.498] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:06.498] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765767454439}
-[00:00:06.774] Server  LOG     API/Products: Fetching products... ""
-[00:00:06.786] Server  LOG     Seller/Me: Access Token verified.
-[00:00:06.892] Browser WARN    Session check failed {}
+[00:00:00.486] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:00.552] Server  WARN     ⚠ Duplicate page detected. app/admin/(protected)/dashboard/page.jsx and app/admin/(protected)/dashboard/page.tsx resolve to /admin/dashboard
+[00:00:00.552] Server  WARN     ⚠ Duplicate page detected. app/admin/(protected)/dashboard/page.jsx and app/admin/(protected)/dashboard/page.tsx resolve to /admin/dashboard
+[00:00:00.552] Server  LOG      ✓ Ready in 408ms
+[00:00:07.878] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:07.878] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:07.878] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765772493040}
+[00:00:08.034] Server  LOG     API/Products: Fetching products... ""
+[00:00:08.043] Server  LOG     Seller/Me: Access Token verified.
+[00:09:26.156] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.158] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.159] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.159] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.161] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.162] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.162] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.163] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.164] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.164] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.164] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.165] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.166] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.167] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.168] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.169] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.170] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.170] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.171] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.171] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.173] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.174] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.174] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.176] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.177] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.177] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.178] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.179] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.180] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.180] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.181] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.181] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:26.190] Server  LOG      ✓ Compiled in 141ms
+[00:09:26.296] Browser ERROR   ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:10:53.382] Server  ERROR    ⨯ ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js:3:1
+Module not found: Can't resolve 'embla-carousel'
+  1 | import { useRef, useState, useCallback, useEffect } from 'react';
+  2 | import { areOptionsEqual, arePluginsEqual, canUseDOM } from 'embla-carousel-reactive-utils';
+> 3 | import EmblaCarousel from 'embla-carousel';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | function useEmblaCarousel(options = {}, plugins = []) {
+  6 |   const storedOptions = useRef(options);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component Browser]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component SSR]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.383] Server  ERROR    ⨯ ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js:3:1
+Module not found: Can't resolve 'embla-carousel'
+  1 | import { useRef, useState, useCallback, useEffect } from 'react';
+  2 | import { areOptionsEqual, arePluginsEqual, canUseDOM } from 'embla-carousel-reactive-utils';
+> 3 | import EmblaCarousel from 'embla-carousel';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | function useEmblaCarousel(options = {}, plugins = []) {
+  6 |   const storedOptions = useRef(options);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component Browser]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component SSR]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.384] Server  ERROR    ⨯ ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js:3:1
+Module not found: Can't resolve 'embla-carousel'
+  1 | import { useRef, useState, useCallback, useEffect } from 'react';
+  2 | import { areOptionsEqual, arePluginsEqual, canUseDOM } from 'embla-carousel-reactive-utils';
+> 3 | import EmblaCarousel from 'embla-carousel';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | function useEmblaCarousel(options = {}, plugins = []) {
+  6 |   const storedOptions = useRef(options);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component Browser]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component SSR]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.384] Server  ERROR    ⨯ ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js:3:1
+Module not found: Can't resolve 'embla-carousel'
+  1 | import { useRef, useState, useCallback, useEffect } from 'react';
+  2 | import { areOptionsEqual, arePluginsEqual, canUseDOM } from 'embla-carousel-reactive-utils';
+> 3 | import EmblaCarousel from 'embla-carousel';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | function useEmblaCarousel(options = {}, plugins = []) {
+  6 |   const storedOptions = useRef(options);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component Browser]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component SSR]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.385] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.385] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.386] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.386] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.388] Server  ERROR    ⨯ ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js:3:1
+Module not found: Can't resolve 'embla-carousel'
+  1 | import { useRef, useState, useCallback, useEffect } from 'react';
+  2 | import { areOptionsEqual, arePluginsEqual, canUseDOM } from 'embla-carousel-reactive-utils';
+> 3 | import EmblaCarousel from 'embla-carousel';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | function useEmblaCarousel(options = {}, plugins = []) {
+  6 |   const storedOptions = useRef(options);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component Browser]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component SSR]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.388] Server  ERROR    ⨯ ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js:3:1
+Module not found: Can't resolve 'embla-carousel'
+  1 | import { useRef, useState, useCallback, useEffect } from 'react';
+  2 | import { areOptionsEqual, arePluginsEqual, canUseDOM } from 'embla-carousel-reactive-utils';
+> 3 | import EmblaCarousel from 'embla-carousel';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | function useEmblaCarousel(options = {}, plugins = []) {
+  6 |   const storedOptions = useRef(options);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component Browser]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component SSR]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.389] Server  ERROR    ⨯ ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js:3:1
+Module not found: Can't resolve 'embla-carousel'
+  1 | import { useRef, useState, useCallback, useEffect } from 'react';
+  2 | import { areOptionsEqual, arePluginsEqual, canUseDOM } from 'embla-carousel-reactive-utils';
+> 3 | import EmblaCarousel from 'embla-carousel';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | function useEmblaCarousel(options = {}, plugins = []) {
+  6 |   const storedOptions = useRef(options);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component Browser]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component SSR]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.389] Server  ERROR    ⨯ ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js:3:1
+Module not found: Can't resolve 'embla-carousel'
+  1 | import { useRef, useState, useCallback, useEffect } from 'react';
+  2 | import { areOptionsEqual, arePluginsEqual, canUseDOM } from 'embla-carousel-reactive-utils';
+> 3 | import EmblaCarousel from 'embla-carousel';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | function useEmblaCarousel(options = {}, plugins = []) {
+  6 |   const storedOptions = useRef(options);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component Browser]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component SSR]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.390] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.390] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.391] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.392] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.392] Server  ERROR    ⨯ ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js:3:1
+Module not found: Can't resolve 'embla-carousel'
+  1 | import { useRef, useState, useCallback, useEffect } from 'react';
+  2 | import { areOptionsEqual, arePluginsEqual, canUseDOM } from 'embla-carousel-reactive-utils';
+> 3 | import EmblaCarousel from 'embla-carousel';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | function useEmblaCarousel(options = {}, plugins = []) {
+  6 |   const storedOptions = useRef(options);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component Browser]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component SSR]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.393] Server  ERROR    ⨯ ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js:3:1
+Module not found: Can't resolve 'embla-carousel'
+  1 | import { useRef, useState, useCallback, useEffect } from 'react';
+  2 | import { areOptionsEqual, arePluginsEqual, canUseDOM } from 'embla-carousel-reactive-utils';
+> 3 | import EmblaCarousel from 'embla-carousel';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | function useEmblaCarousel(options = {}, plugins = []) {
+  6 |   const storedOptions = useRef(options);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component Browser]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component SSR]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.394] Server  ERROR    ⨯ ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js:3:1
+Module not found: Can't resolve 'embla-carousel'
+  1 | import { useRef, useState, useCallback, useEffect } from 'react';
+  2 | import { areOptionsEqual, arePluginsEqual, canUseDOM } from 'embla-carousel-reactive-utils';
+> 3 | import EmblaCarousel from 'embla-carousel';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | function useEmblaCarousel(options = {}, plugins = []) {
+  6 |   const storedOptions = useRef(options);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component Browser]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component SSR]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.395] Server  ERROR    ⨯ ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js:3:1
+Module not found: Can't resolve 'embla-carousel'
+  1 | import { useRef, useState, useCallback, useEffect } from 'react';
+  2 | import { areOptionsEqual, arePluginsEqual, canUseDOM } from 'embla-carousel-reactive-utils';
+> 3 | import EmblaCarousel from 'embla-carousel';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 |
+  5 | function useEmblaCarousel(options = {}, plugins = []) {
+  6 |   const storedOptions = useRef(options);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component Browser]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [Client Component SSR]
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.395] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.397] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.398] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.399] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.410] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.411] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.411] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.412] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.416] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.416] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.417] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.417] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.417] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.418] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.418] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.418] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.419] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.419] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.419] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.420] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.420] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.421] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.422] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.423] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.423] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.423] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.424] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.424] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.425] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.426] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.426] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.427] Server  ERROR    ⨯ ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:10:53.448] Server  LOG      ✓ Compiled in 81ms
+[00:10:53.552] Browser ERROR   ./handmade-arts-e-commerce/components/hero.tsx:4:1
+Module not found: Can't resolve 'embla-carousel-autoplay'
+  2 |
+  3 | import useEmblaCarousel from "embla-carousel-react"
+> 4 | import Autoplay from "embla-carousel-autoplay"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { useEffect, useState } from "react"
+  6 | import Image from "next/image"
+  7 |
+
+Import traces:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component Browser]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./handmade-arts-e-commerce/components/hero.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Client Component SSR]
+    ./handmade-arts-e-commerce/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:10:53.876] Browser WARN    Image with src "http://localhost:3000/wooden-decorative-box.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:10:53.876] Browser WARN    Image with src "http://localhost:3000/hand-painted-canvas-art.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:10:53.876] Browser WARN    Image with src "http://localhost:3000/ceramic-vase-pottery.jpg" has "fill" and a height value of 0. This is likely because the parent element of the image has not been styled to have a set height.
+[00:10:56.799] Server  LOG      ✓ Compiled in 65ms
+[00:17:05.676] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:05.733] Server  LOG     API/Products: Fetching products... ""
+[00:17:05.771] Server  LOG     Seller/Me: Access Token verified.
+[00:17:05.865] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/handmade-...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
++                           className="font-sans antialiased"
+-                           className="font-sans antialiased antigravity-scroll-lock"
+                          >
+                  ...
+
+[00:17:05.865] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:17:05.865] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:17:05.865] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765773511025}
+[00:17:35.864] Server  ERROR   Error fetching products: MongoServerSelectionError: getaddrinfo ENOTFOUND ac-gwpcgzn-shard-00-02.eetarcg.mongodb.net
+[00:17:35.926] Server  ERROR   Seller session check failed MongoServerSelectionError: getaddrinfo ENOTFOUND ac-gwpcgzn-shard-00-02.eetarcg.mongodb.net
+[00:17:35.976] Server  ERROR   Session check failed MongoServerSelectionError: getaddrinfo ENOTFOUND ac-gwpcgzn-shard-00-02.eetarcg.mongodb.net
+[00:17:35.977] Browser ERROR   {}
+[00:17:36.082] Browser WARN    Session check failed {}
+[00:21:41.358] Server  LOG     API/Products: Fetching products... ""
+[00:21:41.367] Server  LOG     Seller/Me: Access Token verified.
+[00:21:41.463] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:21:41.463] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:21:41.463] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765773786622}
+[00:26:08.268] Server  LOG      ✓ Compiled in 70ms
+[00:26:10.213] Server  LOG      ✓ Compiled in 70ms
+[00:27:11.718] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:11.746] Server  LOG     API/Products: Fetching products... ""
+[00:27:11.911] Browser WARN    Session check failed {}
+[00:27:11.911] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:11.911] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:27:11.911] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774117068}
+[00:31:18.053] Server  LOG      ✓ Compiled in 36ms
+[00:31:18.156] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:31:18.160] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:31:19.004] Server  LOG      ✓ Compiled in 5ms
+[00:31:19.106] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:31:19.106] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:31:21.216] Server  LOG      ✓ Compiled in 3ms
+[00:31:21.319] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:31:21.319] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:31:22.480] Server  LOG      ✓ Compiled in 40ms
+[00:31:22.582] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:31:22.583] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:31:37.329] Server  LOG      ✓ Compiled in 47ms
+[00:31:37.432] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:31:37.432] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:32:14.718] Server  ERROR    ⨯ ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+
+
+[00:32:14.840] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:32:14.840] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:32:15.259] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:32:15.259] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:32:15.361] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:32:15.371] Browser ERROR   uncaughtError: Error: ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+
+
+[00:32:15.518] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:32:15.531] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:32:15.531] Browser ERROR   ./handmade-arts-e-commerce/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /Users/akash/Downloads/handmade-arts-e-commerce/app/globals.css:1:1: Can't resolve '@tailwind base' in '/Users/akash/Downloads/handmade-arts-e-commerce/app'
+    [at Input.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (/Users/akash/Downloads/handmade-arts-e-commerce/node_modules/@tailwindcss/postcss/dist/index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/handmade-arts-e-commerce/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./handmade-arts-e-commerce/app/globals.css [Client Component Browser]
+    ./handmade-arts-e-commerce/app/layout.tsx [Server Component]
+[00:33:07.658] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:33:08.045] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:08.088] Server  LOG     API/Products: Fetching products... ""
+[00:33:08.224] Browser WARN    Session check failed {}
+[00:33:08.224] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:33:08.224] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:33:08.224] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774473380}
+[00:34:54.217] Server  LOG      ✓ Compiled in 38ms
+[00:34:59.972] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:34:59.972] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/choose-seller?productId=693e7be4a759287b29e1bbc2 color: rgb(120, 120, 120) color: inherit {"dp":"/choose-seller","o":"http://localhost:3000/choose-seller?productId=693e7be4a759287b29e1bbc2","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774585128}
+[00:35:07.284] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/checkout?productId=693e7be4a759287b29e1bbc2&sellerId=693ec84cba9e333133de59c6 color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"http://localhost:3000/checkout?productId=693e7be4a759287b29e1bbc2&sellerId=693ec84cba9e333133de59c6","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774592439}
+[00:35:18.804] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/payment?orderId=693f950a758a599d95cab680 color: rgb(120, 120, 120) color: inherit {"dp":"/payment","o":"http://localhost:3000/payment?orderId=693f950a758a599d95cab680","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774603959}
+[00:35:41.504] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/orders color: rgb(120, 120, 120) color: inherit {"dp":"/orders","o":"http://localhost:3000/orders","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774626660}
+[00:35:45.262] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/payment?orderId=693f950a758a599d95cab680 color: rgb(120, 120, 120) color: inherit {"dp":"/payment","o":"http://localhost:3000/payment?orderId=693f950a758a599d95cab680","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774630416}
+[00:36:10.116] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:10.144] Server  LOG     API/Products: Fetching products... ""
+[00:36:10.291] Browser WARN    Session check failed {}
+[00:36:10.291] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:36:10.291] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:36:10.291] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774655446}
+[00:36:37.410] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:37.437] Server  LOG     API/Products: Fetching products... ""
+[00:36:37.618] Browser WARN    Session check failed {}
+[00:36:37.618] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:36:37.618] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:36:37.618] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774682739}
+[00:36:37.938] Server  LOG     API/Products: Fetching products... ""
+[00:36:37.955] Server  LOG     Seller/Me: Access Token verified.
+[00:36:38.066] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:36:38.066] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:36:38.066] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774683222}
+[00:36:45.931] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:36:52.495] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/choose-seller?productId=693e7be4a759287b29e1bbc2 color: rgb(120, 120, 120) color: inherit {"dp":"/choose-seller","o":"http://localhost:3000/choose-seller?productId=693e7be4a759287b29e1bbc2","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774697650}
+[00:36:58.797] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/checkout?productId=693e7be4a759287b29e1bbc2&sellerId=693ec84cba9e333133de59c6 color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"http://localhost:3000/checkout?productId=693e7be4a759287b29e1bbc2&sellerId=693ec84cba9e333133de59c6","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774703952}
+[00:38:44.778] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/payment?orderId=693f95d8758a599d95cab69e color: rgb(120, 120, 120) color: inherit {"dp":"/payment","o":"http://localhost:3000/payment?orderId=693f95d8758a599d95cab69e","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774809932}
+[00:41:13.302] Server  LOG     API/Products: Fetching products... ""
+[00:41:13.306] Server  LOG     API/Products: Fetching products... ""
+[00:41:13.397] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774958551}
+[00:41:27.321] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/wishlist color: rgb(120, 120, 120) color: inherit {"dp":"/wishlist","o":"http://localhost:3000/wishlist","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774972476}
+[00:41:29.601] Server  LOG     API/Products: Fetching products... ""
+[00:41:29.604] Server  LOG     API/Products: Fetching products... ""
+[00:41:29.696] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774974848}
+[00:41:33.431] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/wishlist color: rgb(120, 120, 120) color: inherit {"dp":"/wishlist","o":"http://localhost:3000/wishlist","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774978585}
+[00:41:37.777] Server  LOG     API/Products: Fetching products... ""
+[00:41:37.779] Server  LOG     API/Products: Fetching products... ""
+[00:41:37.869] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765774983021}
+[00:41:56.795] Server  LOG      ✓ Compiled in 41ms
+[00:41:58.791] Server  LOG      ✓ Compiled in 36ms
+[00:42:52.068] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/choose-seller?productId=693e7be4a759287b29e1bbc2 color: rgb(120, 120, 120) color: inherit {"dp":"/choose-seller","o":"http://localhost:3000/choose-seller?productId=693e7be4a759287b29e1bbc2","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765775057223}
+[00:42:54.834] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/checkout?productId=693e7be4a759287b29e1bbc2&sellerId=693ec84cba9e333133de59c6 color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"http://localhost:3000/checkout?productId=693e7be4a759287b29e1bbc2&sellerId=693ec84cba9e333133de59c6","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765775059988}
+[00:43:03.805] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/payment?orderId=693f96dc758a599d95cab6c1 color: rgb(120, 120, 120) color: inherit {"dp":"/payment","o":"http://localhost:3000/payment?orderId=693f96dc758a599d95cab6c1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765775068959}
+[00:43:18.962] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/orders color: rgb(120, 120, 120) color: inherit {"dp":"/orders","o":"http://localhost:3000/orders","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765775084116}
+[00:46:23.931] Server  LOG      ✓ Compiled in 41ms
+[00:46:25.936] Server  LOG      ✓ Compiled in 41ms
+[00:46:28.342] Server  LOG      ✓ Compiled in 30ms
+[00:46:30.375] Server  LOG      ✓ Compiled in 36ms
+[00:47:05.585] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:05.612] Server  LOG     API/Products: Fetching products... ""
+[00:47:05.777] Browser WARN    Session check failed {}
+[00:47:05.777] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:47:05.777] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:47:05.777] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765775310931}
+[00:49:57.428] Server  LOG     API/Products: Fetching products... ""
+[00:49:57.434] Server  LOG     API/Products: Fetching products... ""
+[00:49:57.521] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765775482599}
+[00:50:02.427] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/choose-seller color: rgb(120, 120, 120) color: inherit {"dp":"/choose-seller","o":"http://localhost:3000/choose-seller","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765775487508}
+[00:54:28.134] Server  LOG      ✓ Compiled in 43ms
+[00:54:42.350] Server  LOG      ✓ Compiled in 32ms
+[00:57:49.362] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:49.525] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/choose-se..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/handmade-...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
++                           className="font-sans antialiased"
+-                           className="font-sans antialiased antigravity-scroll-lock"
+                          >
+                  ...
+
+[00:57:49.525] Browser WARN    Session check failed {}
+[00:57:49.525] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:57:49.525] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/choose-seller","route":"/choose-seller"}
+[00:57:49.525] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/choose-seller color: rgb(120, 120, 120) color: inherit {"dp":"/choose-seller","o":"http://localhost:3000/choose-seller","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765775954600}
+[00:58:34.173] Server  LOG     Seller/Me: Access Token verified.
+[00:58:34.271] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:58:34.271] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/choose-seller","route":"/choose-seller"}
+[00:58:34.271] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/choose-seller color: rgb(120, 120, 120) color: inherit {"dp":"/choose-seller","o":"http://localhost:3000/choose-seller","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765775999345}
+[00:58:36.067] Server  LOG     Seller/Me: Access Token verified.
+[00:58:36.165] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:58:36.165] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/choose-seller","route":"/choose-seller"}
+[00:58:36.165] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/choose-seller color: rgb(120, 120, 120) color: inherit {"dp":"/choose-seller","o":"http://localhost:3000/choose-seller","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765776001239}
+[00:58:36.913] Server  LOG     Seller/Me: Access Token verified.
+[00:58:37.011] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:58:37.011] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/choose-seller","route":"/choose-seller"}
+[00:58:37.011] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/choose-seller color: rgb(120, 120, 120) color: inherit {"dp":"/choose-seller","o":"http://localhost:3000/choose-seller","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765776002085}
+[00:58:40.675] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:58:45.986] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/checkout?sellerId=693ec84cba9e333133de59c6 color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"http://localhost:3000/checkout?sellerId=693ec84cba9e333133de59c6","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765776011050}
+[00:59:27.724] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/payment?orderId=693f9ab4758a599d95cab6f5 color: rgb(120, 120, 120) color: inherit {"dp":"/payment","o":"http://localhost:3000/payment?orderId=693f9ab4758a599d95cab6f5","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765776052798}
+[00:59:45.910] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/orders color: rgb(120, 120, 120) color: inherit {"dp":"/orders","o":"http://localhost:3000/orders","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765776070984}
+[01:02:53.132] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:53.159] Server  LOG     API/Products: Fetching products... ""
+[01:02:53.166] Server  LOG     Seller/Me: Access Token verified.
+[01:02:53.276] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:02:53.276] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:02:53.276] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765776258346}
+[01:04:01.444] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:04:20.859] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:20.875] Server  LOG     API/Products: Fetching products... ""
+[01:04:20.886] Server  LOG     Seller/Me: Access Token verified.
+[01:04:20.985] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:04:20.985] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:04:20.985] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#products color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#products","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765776346055}
+[01:05:28.088] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:06:24.358] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:24.382] Server  LOG     API/Products: Fetching products... ""
+[01:06:24.387] Server  LOG     Seller/Me: Access Token verified.
+[01:06:24.499] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:06:24.499] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:06:24.499] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765776469567}
+[01:14:44.569] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/choose-seller?productId=693e7be4a759287b29e1bbc2 color: rgb(120, 120, 120) color: inherit {"dp":"/choose-seller","o":"http://localhost:3000/choose-seller?productId=693e7be4a759287b29e1bbc2","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765776969706}
+[01:14:51.791] Server  LOG     API/Products: Fetching products... ""
+[01:14:51.794] Server  LOG     API/Products: Fetching products... ""
+[01:14:51.889] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765776977024}
+[01:14:59.241] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/choose-seller color: rgb(120, 120, 120) color: inherit {"dp":"/choose-seller","o":"http://localhost:3000/choose-seller","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765776984380}
+[01:15:03.146] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/checkout?sellerId=693ec84cba9e333133de59c6 color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"http://localhost:3000/checkout?sellerId=693ec84cba9e333133de59c6","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765776988281}

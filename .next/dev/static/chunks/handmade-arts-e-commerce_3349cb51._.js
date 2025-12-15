@@ -659,7 +659,7 @@ function ChooseSellerPage() {
                 "ChooseSellerPage.useEffect.fetchData": async ()=>{
                     setLoading(true);
                     try {
-                        // Fetch Product Details
+                        // Fetch Product Details only if productId exists
                         if (productId) {
                             const productRes = await fetch(`/api/products/${productId}`);
                             if (productRes.ok) {
@@ -667,7 +667,7 @@ function ChooseSellerPage() {
                                 setProduct(data.product);
                             }
                         }
-                        // Fetch Verified Sellers
+                        // Always Fetch Verified Sellers
                         const sellersRes = await fetch("/api/sellers");
                         if (sellersRes.ok) {
                             const data = await sellersRes.json();
@@ -680,16 +680,24 @@ function ChooseSellerPage() {
                     }
                 }
             }["ChooseSellerPage.useEffect.fetchData"];
-            if (productId) {
-                fetchData();
-            }
+            fetchData();
         }
     }["ChooseSellerPage.useEffect"], [
         productId
     ]);
     const handleProceed = ()=>{
-        if (!selectedSellerId || !productId) return;
-        router.push(`/checkout?productId=${productId}&sellerId=${selectedSellerId}`);
+        if (!selectedSellerId) return;
+        // If productId exists, it's a "Buy Now" flow
+        if (productId) {
+            router.push(`/checkout?productId=${productId}&sellerId=${selectedSellerId}`);
+        } else {
+            // Otherwise, it's a "Cart Checkout" flow - we pass sellerId context
+            // Note: In a real app, you might save this to context/session, 
+            // but passing as query param works if checkout page looks for it or we just proceed.
+            // Currently checkout uses cart items by default if no productId.
+            // We pass sellerId just in case future logic needs it.
+            router.push(`/checkout?sellerId=${selectedSellerId}`);
+        }
     };
     if (loading) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -701,7 +709,7 @@ function ChooseSellerPage() {
                         className: "h-12 w-12 bg-gray-200 rounded-full mb-4"
                     }, void 0, false, {
                         fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                        lineNumber: 59,
+                        lineNumber: 79,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -709,46 +717,18 @@ function ChooseSellerPage() {
                         children: "Loading artisans..."
                     }, void 0, false, {
                         fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                        lineNumber: 60,
+                        lineNumber: 80,
                         columnNumber: 21
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                lineNumber: 58,
+                lineNumber: 78,
                 columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-            lineNumber: 57,
-            columnNumber: 13
-        }, this);
-    }
-    if (!productId || !product) {
-        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "min-h-screen flex items-center justify-center bg-background",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-muted-foreground",
-                    children: "Product not found."
-                }, void 0, false, {
-                    fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                    lineNumber: 69,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                    variant: "link",
-                    onClick: ()=>router.push("/"),
-                    children: "Return Home"
-                }, void 0, false, {
-                    fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                    lineNumber: 70,
-                    columnNumber: 17
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-            lineNumber: 68,
+            lineNumber: 77,
             columnNumber: 13
         }, this);
     }
@@ -769,14 +749,14 @@ function ChooseSellerPage() {
                                     size: 16
                                 }, void 0, false, {
                                     fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                                    lineNumber: 83,
+                                    lineNumber: 92,
                                     columnNumber: 25
                                 }, this),
                                 "Back"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                            lineNumber: 82,
+                            lineNumber: 91,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -784,26 +764,26 @@ function ChooseSellerPage() {
                             children: "Choose Your Artisan"
                         }, void 0, false, {
                             fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                            lineNumber: 86,
+                            lineNumber: 95,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "w-[88px]"
                         }, void 0, false, {
                             fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                            lineNumber: 87,
+                            lineNumber: 96,
                             columnNumber: 21
                         }, this),
                         " "
                     ]
                 }, void 0, true, {
                     fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                    lineNumber: 81,
+                    lineNumber: 90,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                lineNumber: 80,
+                lineNumber: 89,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -817,39 +797,53 @@ function ChooseSellerPage() {
                                 children: "Choose a Seller"
                             }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                                lineNumber: 95,
+                                lineNumber: 104,
                                 columnNumber: 21
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-lg text-muted-foreground",
-                                children: [
-                                    "Select the best artisan to craft your ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                        children: product.name
-                                    }, void 0, false, {
-                                        fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                                        lineNumber: 99,
-                                        columnNumber: 63
-                                    }, this),
-                                    ".",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {
-                                        className: "hidden sm:block"
-                                    }, void 0, false, {
-                                        fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                                        lineNumber: 100,
-                                        columnNumber: 25
-                                    }, this),
-                                    "Review their ratings, stories, and verified status below."
-                                ]
-                            }, void 0, true, {
+                                children: product ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                    children: [
+                                        "Select the best artisan to craft your ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                            children: product.name
+                                        }, void 0, false, {
+                                            fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
+                                            lineNumber: 110,
+                                            columnNumber: 71
+                                        }, this),
+                                        ".",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {
+                                            className: "hidden sm:block"
+                                        }, void 0, false, {
+                                            fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
+                                            lineNumber: 111,
+                                            columnNumber: 33
+                                        }, this),
+                                        "Review their ratings, stories, and verified status below."
+                                    ]
+                                }, void 0, true) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                    children: [
+                                        "Select an artisan to support with your order.",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {
+                                            className: "hidden sm:block"
+                                        }, void 0, false, {
+                                            fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
+                                            lineNumber: 117,
+                                            columnNumber: 33
+                                        }, this),
+                                        "Your purchase directly empowers these talented creators."
+                                    ]
+                                }, void 0, true)
+                            }, void 0, false, {
                                 fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                                lineNumber: 98,
+                                lineNumber: 107,
                                 columnNumber: 21
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                        lineNumber: 94,
+                        lineNumber: 103,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -860,12 +854,12 @@ function ChooseSellerPage() {
                             onSelect: setSelectedSellerId
                         }, void 0, false, {
                             fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                            lineNumber: 107,
+                            lineNumber: 126,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                        lineNumber: 106,
+                        lineNumber: 125,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -880,7 +874,7 @@ function ChooseSellerPage() {
                                             children: "Selected:"
                                         }, void 0, false, {
                                             fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                                            lineNumber: 119,
+                                            lineNumber: 138,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -888,13 +882,13 @@ function ChooseSellerPage() {
                                             children: sellers.find((s)=>s.id === selectedSellerId)?.businessName
                                         }, void 0, false, {
                                             fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                                            lineNumber: 120,
+                                            lineNumber: 139,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 137,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -910,43 +904,43 @@ function ChooseSellerPage() {
                                             className: "ml-2 h-5 w-5"
                                         }, void 0, false, {
                                             fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                                            lineNumber: 138,
+                                            lineNumber: 157,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                                    lineNumber: 126,
+                                    lineNumber: 145,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                            lineNumber: 116,
+                            lineNumber: 135,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                        lineNumber: 115,
+                        lineNumber: 134,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "h-24 sm:hidden"
                     }, void 0, false, {
                         fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                        lineNumber: 144,
+                        lineNumber: 163,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-                lineNumber: 91,
+                lineNumber: 100,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
-        lineNumber: 78,
+        lineNumber: 87,
         columnNumber: 9
     }, this);
 }

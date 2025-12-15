@@ -12,8 +12,12 @@ export default function Home() {
   return (
     <div className="flex-1">
       <Hero />
-      <CategoryBrowser onCategorySelect={setSelectedCategory} />
-      <ProductGrid selectedCategory={selectedCategory} />
+      <section id="categories">
+        <CategoryBrowser onCategorySelect={setSelectedCategory} />
+      </section>
+      <section id="products">
+        <ProductGrid selectedCategory={selectedCategory} />
+      </section>
       <FeaturedSection />
     </div>
   )

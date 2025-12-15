@@ -110,16 +110,10 @@ export default function CheckoutPage() {
                 sellerId: buyNowItem ? buyNowSellerId : undefined
             }
 
-            await addOrder(orderData)
+            const order = await addOrder(orderData)
 
-            setSuccess(true)
-            if (!buyNowItem) {
-                clearCart() // Only clear cart if this was a cart checkout
-            }
-
-            setTimeout(() => {
-                router.push("/orders") // Redirect to orders instead of dashboard for better UX
-            }, 2000)
+            // Direct redirect to payment page, no success message here
+            router.push(`/payment?orderId=${order._id}`)
         } catch (error) {
             console.error("Order failed:", error)
             const errorMessage = error instanceof Error ? error.message : "Failed to place order. Please try again."
@@ -309,7 +303,7 @@ export default function CheckoutPage() {
                                             Processing...
                                         </>
                                     ) : (
-                                        "Place Order"
+                                        "Proceed to Pay"
                                     )}
                                 </button>
                             </form>
