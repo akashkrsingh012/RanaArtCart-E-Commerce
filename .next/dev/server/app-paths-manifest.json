@@ -1,9 +1,4 @@
 {
-  "/admin/(protected)/dashboard/page": "app/admin/(protected)/dashboard/page.js",
-  "/admin/login/page": "app/admin/login/page.js",
-  "/api/admin/login/route": "app/api/admin/login/route.js",
-  "/api/admin/logout/route": "app/api/admin/logout/route.js",
-  "/api/admin/sellers/route": "app/api/admin/sellers/route.js",
   "/api/auth/me/route": "app/api/auth/me/route.js",
   "/api/products/route": "app/api/products/route.js",
   "/api/seller/login/route": "app/api/seller/login/route.js",
@@ -12,6 +7,6 @@
   "/login/page": "app/login/page.js",
   "/page": "app/page.js",
   "/seller/dashboard/page": "app/seller/dashboard/page.js",
-  "/seller/orders/page": "app/seller/orders/page.js",
+  "/seller/products/new/page": "app/seller/products/new/page.js",
   "/seller/products/page": "app/seller/products/page.js"
 }

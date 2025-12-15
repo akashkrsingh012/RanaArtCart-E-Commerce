@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import SellerLayout from "@/components/seller/SellerLayout"
+import { compressImage } from "@/lib/imageUtils"
 
 export default function NewProductPage() {
   const router = useRouter()
@@ -65,8 +66,16 @@ export default function NewProductPage() {
       data.append("discountPrice", formData.discountPrice)
       data.append("stock", formData.stock)
       data.append("category", formData.category)
+
       if (imageFile) {
-        data.append("image", imageFile)
+        // Compress image before upload
+        try {
+          const compressedFile = await compressImage(imageFile)
+          data.append("image", compressedFile)
+        } catch (compressionError) {
+          console.error("Image compression failed, falling back to original:", compressionError)
+          data.append("image", imageFile)
+        }
       }
 
       const res = await fetch("/api/products", {
@@ -84,7 +93,7 @@ export default function NewProductPage() {
       router.push("/seller/products")
     } catch (error) {
       console.error(error)
-      alert("Failed to create product. Please try again.")
+      alert(error instanceof Error ? error.message : "Failed to create product. Please try again.")
     } finally {
       setLoading(false)
     }
