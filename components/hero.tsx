@@ -40,7 +40,7 @@ export default function Hero() {
                 href="#products"
                 className="bg-amber-500 text-white px-8 py-3.5 rounded-full font-bold hover:scale-105 hover:bg-amber-600 hover:shadow-lg transition-all duration-300 shadow-md inline-block text-center"
               >
-                Start Shopping
+                Start Shop
               </Link>
               <Link
                 href="#products"
