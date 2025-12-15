@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///Users/akash/Downloads/handmade-arts-e-commerce/app/api/seller/logout/route.js"],"sourcesContent":["export const dynamic = \"force-dynamic\"\n\nimport { cookies } from \"next/headers\"\nimport { NextResponse } from \"next/server\"\n\nexport async function POST() {\n  try {\n    const cookieStore = await cookies()\n    cookieStore.set(\"sellerRefreshToken\", \"\", {\n      httpOnly: true,\n      secure: process.env.NODE_ENV === \"production\",\n      sameSite: \"strict\",\n      path: \"/\",\n      maxAge: 0,\n    })\n\n    return NextResponse.json({ ok: true })\n  } catch (error) {\n    console.error(\"Seller logout failed\", error)\n    return NextResponse.json({ error: \"Logout failed.\" }, { status: 500 })\n  }\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n"],"names":[],"mappings":";;;;;;AAEA;AACA;AAHO,MAAM,UAAU;;;AAKhB,eAAe;IACpB,IAAI;QACF,MAAM,cAAc,MAAM,IAAA,iLAAO;QACjC,YAAY,GAAG,CAAC,sBAAsB,IAAI;YACxC,UAAU;YACV,QAAQ,oDAAyB;YACjC,UAAU;YACV,MAAM;YACN,QAAQ;QACV;QAEA,OAAO,qLAAY,CAAC,IAAI,CAAC;YAAE,IAAI;QAAK;IACtC,EAAE,OAAO,OAAO;QACd,QAAQ,KAAK,CAAC,wBAAwB;QACtC,OAAO,qLAAY,CAAC,IAAI,CAAC;YAAE,OAAO;QAAiB,GAAG;YAAE,QAAQ;QAAI;IACtE;AACF"}}]
+}

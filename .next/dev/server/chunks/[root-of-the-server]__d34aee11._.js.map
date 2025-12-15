@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///Users/akash/Downloads/handmade-arts-e-commerce/app/api/admin/logout/route.ts"],"sourcesContent":["import { NextResponse } from \"next/server\"\nimport { cookies } from \"next/headers\"\n\nexport async function POST() {\n    const cookieStore = await cookies()\n    cookieStore.delete(\"adminToken\")\n    return NextResponse.json({ success: true })\n}\n"],"names":[],"mappings":";;;;AAAA;AACA;;;AAEO,eAAe;IAClB,MAAM,cAAc,MAAM,IAAA,iLAAO;IACjC,YAAY,MAAM,CAAC;IACnB,OAAO,qLAAY,CAAC,IAAI,CAAC;QAAE,SAAS;IAAK;AAC7C"}}]
+}

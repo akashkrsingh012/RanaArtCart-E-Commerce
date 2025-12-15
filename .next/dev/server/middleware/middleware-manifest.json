@@ -1,0 +1,35 @@
+{
+  "sorted_middleware": [],
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge/chunks/handmade-arts-e-commerce_9f16e638._.js",
+        "server/edge/chunks/[root-of-the-server]__20faa306._.js",
+        "server/edge/chunks/turbopack-handmade-arts-e-commerce_edge-wrapper_c48cad0c.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/private/:path*{(\\\\.json)}?",
+          "originalSource": "/private/:path*"
+        },
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/seller/:path*{(\\\\.json)}?",
+          "originalSource": "/seller/:path*"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "Py/xeRBXGc6nD9lRrvFWDXg0SvoQWulvwW1fk0iuZj0=",
+        "__NEXT_PREVIEW_MODE_ID": "22b363e3f40de27fc958d28ce04c0a69",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "19e492ab4edc73e251a8e42777402a72cd97a819b86a7a1262689ff7bc878128",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "927d0e5f928dbecbf7fb1616104ef3c5aa22aa8c4b55f89e2acc0cb67b63dd86"
+      }
+    }
+  },
+  "instrumentation": null,
+  "functions": {}
+}
