@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import { useSearchParams, useRouter } from "next/navigation"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -17,7 +17,7 @@ interface Seller {
     [key: string]: any
 }
 
-export default function ChooseSellerPage() {
+function ChooseSellerContent() {
     const router = useRouter()
     const searchParams = useSearchParams()
     const productId = searchParams.get("productId")
@@ -164,5 +164,20 @@ export default function ChooseSellerPage() {
 
             </main>
         </div>
+    )
+}
+
+export default function ChooseSellerPage() {
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen flex items-center justify-center bg-background">
+                <div className="animate-pulse flex flex-col items-center">
+                    <div className="h-12 w-12 bg-gray-200 rounded-full mb-4"></div>
+                    <p className="text-muted-foreground">Loading artisans...</p>
+                </div>
+            </div>
+        }>
+            <ChooseSellerContent />
+        </Suspense>
     )
 }

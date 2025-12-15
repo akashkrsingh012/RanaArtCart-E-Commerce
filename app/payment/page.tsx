@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import { useUser } from "@/contexts/user-context"
 import {
@@ -14,7 +14,7 @@ import {
     ArrowRight
 } from "lucide-react"
 
-export default function PaymentPage() {
+function PaymentContent() {
     const router = useRouter()
     const searchParams = useSearchParams()
     const { orders } = useUser()
@@ -223,5 +223,17 @@ export default function PaymentPage() {
                 </div>
             </div>
         </div>
+    )
+}
+
+export default function PaymentPage() {
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen flex items-center justify-center bg-neutral-50">
+                <Loader2 className="animate-spin text-orange-600" size={40} />
+            </div>
+        }>
+            <PaymentContent />
+        </Suspense>
     )
 }

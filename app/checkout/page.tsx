@@ -2,7 +2,7 @@
 
 import { useCart } from "@/hooks/use-cart"
 import { useUser } from "@/contexts/user-context"
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import { Loader2, CheckCircle2 } from "lucide-react"
 
@@ -14,7 +14,9 @@ interface SingleProduct {
     quantity: number;
 }
 
-export default function CheckoutPage() {
+
+
+function CheckoutContent() {
     const { items: cartItems, clearCart } = useCart()
     const { user, addOrder } = useUser()
     const router = useRouter()
@@ -312,5 +314,17 @@ export default function CheckoutPage() {
                 </div>
             </div>
         </div>
+    )
+}
+
+export default function CheckoutPage() {
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen flex items-center justify-center bg-background">
+                <Loader2 size={32} className="animate-spin text-primary" />
+            </div>
+        }>
+            <CheckoutContent />
+        </Suspense>
     )
 }

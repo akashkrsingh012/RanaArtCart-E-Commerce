@@ -644,7 +644,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-function ChooseSellerPage() {
+function ChooseSellerContent() {
     _s();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"])();
@@ -654,9 +654,9 @@ function ChooseSellerPage() {
     const [selectedSellerId, setSelectedSellerId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "ChooseSellerPage.useEffect": ()=>{
+        "ChooseSellerContent.useEffect": ()=>{
             const fetchData = {
-                "ChooseSellerPage.useEffect.fetchData": async ()=>{
+                "ChooseSellerContent.useEffect.fetchData": async ()=>{
                     setLoading(true);
                     try {
                         // Fetch Product Details only if productId exists
@@ -679,10 +679,10 @@ function ChooseSellerPage() {
                         setLoading(false);
                     }
                 }
-            }["ChooseSellerPage.useEffect.fetchData"];
+            }["ChooseSellerContent.useEffect.fetchData"];
             fetchData();
         }
-    }["ChooseSellerPage.useEffect"], [
+    }["ChooseSellerContent.useEffect"], [
         productId
     ]);
     const handleProceed = ()=>{
@@ -944,15 +944,61 @@ function ChooseSellerPage() {
         columnNumber: 9
     }, this);
 }
-_s(ChooseSellerPage, "mvHgONB0Fh8qZwCVbfpmg0x79SM=", false, function() {
+_s(ChooseSellerContent, "mvHgONB0Fh8qZwCVbfpmg0x79SM=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
         __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"]
     ];
 });
-_c = ChooseSellerPage;
-var _c;
-__turbopack_context__.k.register(_c, "ChooseSellerPage");
+_c = ChooseSellerContent;
+function ChooseSellerPage() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Suspense"], {
+        fallback: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "min-h-screen flex items-center justify-center bg-background",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "animate-pulse flex flex-col items-center",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "h-12 w-12 bg-gray-200 rounded-full mb-4"
+                    }, void 0, false, {
+                        fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
+                        lineNumber: 175,
+                        columnNumber: 21
+                    }, void 0),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-muted-foreground",
+                        children: "Loading artisans..."
+                    }, void 0, false, {
+                        fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
+                        lineNumber: 176,
+                        columnNumber: 21
+                    }, void 0)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
+                lineNumber: 174,
+                columnNumber: 17
+            }, void 0)
+        }, void 0, false, {
+            fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
+            lineNumber: 173,
+            columnNumber: 13
+        }, void 0),
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ChooseSellerContent, {}, void 0, false, {
+            fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
+            lineNumber: 180,
+            columnNumber: 13
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/handmade-arts-e-commerce/app/choose-seller/page.tsx",
+        lineNumber: 172,
+        columnNumber: 9
+    }, this);
+}
+_c1 = ChooseSellerPage;
+var _c, _c1;
+__turbopack_context__.k.register(_c, "ChooseSellerContent");
+__turbopack_context__.k.register(_c1, "ChooseSellerPage");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
