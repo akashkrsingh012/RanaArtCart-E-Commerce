@@ -18,7 +18,7 @@ export async function POST(request) {
     await connectToDatabase()
 
     // Check if seller already exists
-    const existing = await Seller.findOne({ email: email.toLowerCase() })
+    const existing = await Seller.findOne({ email: email.trim().toLowerCase() })
     if (existing) {
       return NextResponse.json({ error: "Email already in use." }, { status: 409 })
     }
@@ -29,7 +29,7 @@ export async function POST(request) {
     // Create seller in MongoDB
     const seller = new Seller({
       name,
-      email: email.toLowerCase(),
+      email: email.trim().toLowerCase(),
       password: passwordHash,
       phone,
       businessName,

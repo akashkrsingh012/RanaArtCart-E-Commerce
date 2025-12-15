@@ -56,6 +56,7 @@ export async function POST(request) {
         const stock = formData.get("stock")
         const category = formData.get("category")
         const imageFile = formData.get("image")
+        const discountPrice = formData.get("discountPrice")
 
         console.log("Form data received:", { name, description, price, stock, category, image: imageFile ? "present" : "missing" });
 
@@ -96,6 +97,7 @@ export async function POST(request) {
             name,
             description,
             price: Number(price),
+            discountPrice: Number(discountPrice) || 0,
             stock: Number(stock),
             category,
             image: imageUrl,

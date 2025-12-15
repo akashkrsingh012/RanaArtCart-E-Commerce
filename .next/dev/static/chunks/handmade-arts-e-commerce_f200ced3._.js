@@ -417,11 +417,54 @@ function NewProductPage() {
         name: "",
         description: "",
         price: "",
+        discountPrice: "",
         stock: "",
-        category: ""
+        category: "",
+        discountPercentage: ""
     });
     const [imageFile, setImageFile] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    // Auto-calculate MRP based on Price and Discount %
+    const calculateMRP = (price, percentage)=>{
+        const p = parseFloat(price);
+        const per = parseFloat(percentage);
+        if (!isNaN(p) && !isNaN(per) && per > 0 && per < 100) {
+            const mrp = p / (1 - per / 100);
+            return Math.round(mrp).toString();
+        }
+        return "";
+    };
+    const handlePriceChange = (e)=>{
+        const newPrice = e.target.value;
+        let newMRP = formData.discountPrice;
+        // If discount % exists, recalculate MRP
+        if (formData.discountPercentage) {
+            newMRP = calculateMRP(newPrice, formData.discountPercentage);
+        }
+        setFormData({
+            ...formData,
+            price: newPrice,
+            discountPrice: newMRP
+        });
+    };
+    const handleDiscountChange = (e)=>{
+        const newPercent = e.target.value;
+        const newMRP = calculateMRP(formData.price, newPercent);
+        setFormData({
+            ...formData,
+            discountPercentage: newPercent,
+            discountPrice: newMRP
+        });
+    };
+    // Allow manual MRP override (optional: clears %)
+    const handleMRPChange = (e)=>{
+        const newMRP = e.target.value;
+        setFormData({
+            ...formData,
+            discountPrice: newMRP,
+            discountPercentage: ""
+        });
+    };
     const handleSubmit = async (e)=>{
         e.preventDefault();
         setLoading(true);
@@ -430,6 +473,7 @@ function NewProductPage() {
             data.append("name", formData.name);
             data.append("description", formData.description);
             data.append("price", formData.price);
+            data.append("discountPrice", formData.discountPrice);
             data.append("stock", formData.stock);
             data.append("category", formData.category);
             if (imageFile) {
@@ -464,7 +508,7 @@ function NewProductPage() {
                             children: "Add New Product"
                         }, void 0, false, {
                             fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                            lineNumber: 59,
+                            lineNumber: 97,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -472,13 +516,13 @@ function NewProductPage() {
                             children: "Create a new product listing"
                         }, void 0, false, {
                             fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                            lineNumber: 60,
+                            lineNumber: 98,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                    lineNumber: 58,
+                    lineNumber: 96,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -492,7 +536,7 @@ function NewProductPage() {
                                     children: "Product Name"
                                 }, void 0, false, {
                                     fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                    lineNumber: 65,
+                                    lineNumber: 103,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -507,13 +551,13 @@ function NewProductPage() {
                                     placeholder: "Enter product name"
                                 }, void 0, false, {
                                     fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                    lineNumber: 66,
+                                    lineNumber: 104,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                            lineNumber: 64,
+                            lineNumber: 102,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -523,7 +567,7 @@ function NewProductPage() {
                                     children: "Description"
                                 }, void 0, false, {
                                     fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                    lineNumber: 77,
+                                    lineNumber: 115,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -538,13 +582,114 @@ function NewProductPage() {
                                     placeholder: "Enter product description"
                                 }, void 0, false, {
                                     fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                    lineNumber: 78,
+                                    lineNumber: 116,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                            lineNumber: 76,
+                            lineNumber: 114,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid grid-cols-3 gap-4",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                            className: "block text-sm font-semibold text-gray-700 mb-2",
+                                            children: "Price (Selling Price) ₹"
+                                        }, void 0, false, {
+                                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                            lineNumber: 128,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                            type: "number",
+                                            required: true,
+                                            value: formData.price,
+                                            onChange: handlePriceChange,
+                                            className: "w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500",
+                                            placeholder: "0"
+                                        }, void 0, false, {
+                                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                            lineNumber: 129,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                    lineNumber: 127,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                            className: "block text-sm font-semibold text-gray-700 mb-2",
+                                            children: "Discount (%)"
+                                        }, void 0, false, {
+                                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                            lineNumber: 140,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                            type: "number",
+                                            min: "0",
+                                            max: "99",
+                                            value: formData.discountPercentage,
+                                            onChange: handleDiscountChange,
+                                            className: "w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500",
+                                            placeholder: "e.g. 20"
+                                        }, void 0, false, {
+                                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                            lineNumber: 141,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                    lineNumber: 139,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                            className: "block text-sm font-semibold text-gray-700 mb-2",
+                                            children: "Original Price (MRP)"
+                                        }, void 0, false, {
+                                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                            lineNumber: 153,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                            type: "number",
+                                            value: formData.discountPrice,
+                                            onChange: handleMRPChange,
+                                            className: "w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-50",
+                                            placeholder: "Auto-calculated"
+                                        }, void 0, false, {
+                                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                            lineNumber: 154,
+                                            columnNumber: 15
+                                        }, this),
+                                        formData.discountPrice && Number(formData.discountPrice) <= Number(formData.price) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs text-red-500 mt-1",
+                                            children: "MRP must be higher than Selling Price to show a discount."
+                                        }, void 0, false, {
+                                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                            lineNumber: 162,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                    lineNumber: 152,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                            lineNumber: 126,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -554,41 +699,10 @@ function NewProductPage() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                             className: "block text-sm font-semibold text-gray-700 mb-2",
-                                            children: "Price (₹)"
-                                        }, void 0, false, {
-                                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                            lineNumber: 90,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                            type: "number",
-                                            required: true,
-                                            value: formData.price,
-                                            onChange: (e)=>setFormData({
-                                                    ...formData,
-                                                    price: e.target.value
-                                                }),
-                                            className: "w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500",
-                                            placeholder: "0"
-                                        }, void 0, false, {
-                                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                            lineNumber: 91,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                    lineNumber: 89,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                            className: "block text-sm font-semibold text-gray-700 mb-2",
                                             children: "Stock"
                                         }, void 0, false, {
                                             fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                            lineNumber: 101,
+                                            lineNumber: 171,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -603,106 +717,106 @@ function NewProductPage() {
                                             placeholder: "0"
                                         }, void 0, false, {
                                             fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                            lineNumber: 102,
+                                            lineNumber: 172,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                    lineNumber: 100,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                            lineNumber: 88,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                    className: "block text-sm font-semibold text-gray-700 mb-2",
-                                    children: "Category"
-                                }, void 0, false, {
-                                    fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                    lineNumber: 114,
+                                    lineNumber: 170,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
-                                    required: true,
-                                    value: formData.category,
-                                    onChange: (e)=>setFormData({
-                                            ...formData,
-                                            category: e.target.value
-                                        }),
-                                    className: "w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "",
-                                            children: "Select category"
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                            className: "block text-sm font-semibold text-gray-700 mb-2",
+                                            children: "Category"
                                         }, void 0, false, {
                                             fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                            lineNumber: 121,
+                                            lineNumber: 182,
                                             columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "paintings",
-                                            children: "Paintings"
-                                        }, void 0, false, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                            required: true,
+                                            value: formData.category,
+                                            onChange: (e)=>setFormData({
+                                                    ...formData,
+                                                    category: e.target.value
+                                                }),
+                                            className: "w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "",
+                                                    children: "Select category"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                                    lineNumber: 189,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "paintings",
+                                                    children: "Paintings"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                                    lineNumber: 190,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "sculptures",
+                                                    children: "Sculptures"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                                    lineNumber: 191,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "pottery",
+                                                    children: "Pottery"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                                    lineNumber: 192,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "textiles",
+                                                    children: "Textiles"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                                    lineNumber: 193,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "jewelry",
+                                                    children: "Jewelry"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                                    lineNumber: 194,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "woodcraft",
+                                                    children: "Woodcraft"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
+                                                    lineNumber: 195,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                            lineNumber: 122,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "sculptures",
-                                            children: "Sculptures"
-                                        }, void 0, false, {
-                                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                            lineNumber: 123,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "pottery",
-                                            children: "Pottery"
-                                        }, void 0, false, {
-                                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                            lineNumber: 124,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "textiles",
-                                            children: "Textiles"
-                                        }, void 0, false, {
-                                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                            lineNumber: 125,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "jewelry",
-                                            children: "Jewelry"
-                                        }, void 0, false, {
-                                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                            lineNumber: 126,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
-                                            value: "woodcraft",
-                                            children: "Woodcraft"
-                                        }, void 0, false, {
-                                            fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                            lineNumber: 127,
+                                            lineNumber: 183,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                    lineNumber: 115,
+                                    lineNumber: 181,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                            lineNumber: 113,
+                            lineNumber: 169,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -712,7 +826,7 @@ function NewProductPage() {
                                     children: "Product Image"
                                 }, void 0, false, {
                                     fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                    lineNumber: 132,
+                                    lineNumber: 201,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -723,7 +837,7 @@ function NewProductPage() {
                                     className: "w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 }, void 0, false, {
                                     fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                    lineNumber: 133,
+                                    lineNumber: 202,
                                     columnNumber: 13
                                 }, this),
                                 imageFile && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -734,13 +848,13 @@ function NewProductPage() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                    lineNumber: 140,
+                                    lineNumber: 209,
                                     columnNumber: 27
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                            lineNumber: 131,
+                            lineNumber: 200,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -753,7 +867,7 @@ function NewProductPage() {
                                     children: loading ? "Creating..." : "Create Product"
                                 }, void 0, false, {
                                     fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                    lineNumber: 144,
+                                    lineNumber: 213,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -763,34 +877,34 @@ function NewProductPage() {
                                     children: "Cancel"
                                 }, void 0, false, {
                                     fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                                    lineNumber: 151,
+                                    lineNumber: 220,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                            lineNumber: 143,
+                            lineNumber: 212,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-                    lineNumber: 63,
+                    lineNumber: 101,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-            lineNumber: 57,
+            lineNumber: 95,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/handmade-arts-e-commerce/app/seller/products/new/page.tsx",
-        lineNumber: 56,
+        lineNumber: 94,
         columnNumber: 5
     }, this);
 }
-_s(NewProductPage, "T2q0msJdH6ZlBADQzsPAfbFVQzQ=", false, function() {
+_s(NewProductPage, "wZ3WklQgIOv/UecX5Ko0mdysjN0=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];

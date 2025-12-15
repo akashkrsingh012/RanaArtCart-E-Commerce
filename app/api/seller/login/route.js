@@ -17,7 +17,7 @@ export async function POST(request) {
 
     await connectToDatabase()
 
-    const seller = await Seller.findOne({ email: email.toLowerCase() })
+    const seller = await Seller.findOne({ email: email.trim().toLowerCase() })
     if (!seller) {
       return NextResponse.json({ error: "Invalid credentials." }, { status: 401 })
     }

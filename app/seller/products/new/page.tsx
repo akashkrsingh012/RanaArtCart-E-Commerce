@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import SellerLayout from "@/components/seller/SellerLayout"
 
@@ -10,11 +10,48 @@ export default function NewProductPage() {
     name: "",
     description: "",
     price: "",
+    discountPrice: "",
     stock: "",
     category: "",
+    discountPercentage: "",
   })
   const [imageFile, setImageFile] = useState<File | null>(null)
   const [loading, setLoading] = useState(false)
+
+  // Auto-calculate MRP based on Price and Discount %
+  const calculateMRP = (price: string, percentage: string) => {
+    const p = parseFloat(price)
+    const per = parseFloat(percentage)
+    if (!isNaN(p) && !isNaN(per) && per > 0 && per < 100) {
+      const mrp = p / (1 - per / 100)
+      return Math.round(mrp).toString()
+    }
+    return ""
+  }
+
+  const handlePriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newPrice = e.target.value
+    let newMRP = formData.discountPrice
+
+    // If discount % exists, recalculate MRP
+    if (formData.discountPercentage) {
+      newMRP = calculateMRP(newPrice, formData.discountPercentage)
+    }
+
+    setFormData({ ...formData, price: newPrice, discountPrice: newMRP })
+  }
+
+  const handleDiscountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newPercent = e.target.value
+    const newMRP = calculateMRP(formData.price, newPercent)
+    setFormData({ ...formData, discountPercentage: newPercent, discountPrice: newMRP })
+  }
+
+  // Allow manual MRP override (optional: clears %)
+  const handleMRPChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newMRP = e.target.value
+    setFormData({ ...formData, discountPrice: newMRP, discountPercentage: "" })
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -25,6 +62,7 @@ export default function NewProductPage() {
       data.append("name", formData.name)
       data.append("description", formData.description)
       data.append("price", formData.price)
+      data.append("discountPrice", formData.discountPrice)
       data.append("stock", formData.stock)
       data.append("category", formData.category)
       if (imageFile) {
@@ -85,18 +123,50 @@ export default function NewProductPage() {
             />
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-3 gap-4">
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">Price (₹)</label>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">Price (Selling Price) ₹</label>
               <input
                 type="number"
                 required
                 value={formData.price}
-                onChange={(e) => setFormData({ ...formData, price: e.target.value })}
+                onChange={handlePriceChange}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="0"
               />
             </div>
+
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">Discount (%)</label>
+              <input
+                type="number"
+                min="0"
+                max="99"
+                value={formData.discountPercentage}
+                onChange={handleDiscountChange}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="e.g. 20"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">Original Price (MRP)</label>
+              <input
+                type="number"
+                value={formData.discountPrice}
+                onChange={handleMRPChange}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-50"
+                placeholder="Auto-calculated"
+              />
+              {formData.discountPrice && Number(formData.discountPrice) <= Number(formData.price) && (
+                <p className="text-xs text-red-500 mt-1">
+                  MRP must be higher than Selling Price to show a discount.
+                </p>
+              )}
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">Stock</label>
               <input
@@ -108,24 +178,23 @@ export default function NewProductPage() {
                 placeholder="0"
               />
             </div>
-          </div>
-
-          <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">Category</label>
-            <select
-              required
-              value={formData.category}
-              onChange={(e) => setFormData({ ...formData, category: e.target.value })}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              <option value="">Select category</option>
-              <option value="paintings">Paintings</option>
-              <option value="sculptures">Sculptures</option>
-              <option value="pottery">Pottery</option>
-              <option value="textiles">Textiles</option>
-              <option value="jewelry">Jewelry</option>
-              <option value="woodcraft">Woodcraft</option>
-            </select>
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2">Category</label>
+              <select
+                required
+                value={formData.category}
+                onChange={(e) => setFormData({ ...formData, category: e.target.value })}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <option value="">Select category</option>
+                <option value="paintings">Paintings</option>
+                <option value="sculptures">Sculptures</option>
+                <option value="pottery">Pottery</option>
+                <option value="textiles">Textiles</option>
+                <option value="jewelry">Jewelry</option>
+                <option value="woodcraft">Woodcraft</option>
+              </select>
+            </div>
           </div>
 
           <div>

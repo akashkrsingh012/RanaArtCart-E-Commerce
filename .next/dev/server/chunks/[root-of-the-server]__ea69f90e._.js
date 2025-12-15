@@ -245,7 +245,7 @@ async function POST(request) {
         }
         await (0, __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$lib$2f$mongodb$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["connectToDatabase"])();
         const seller = await __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$models$2f$Seller$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].findOne({
-            email: email.toLowerCase()
+            email: email.trim().toLowerCase()
         });
         if (!seller) {
             return __TURBOPACK__imported__module__$5b$project$5d2f$handmade$2d$arts$2d$e$2d$commerce$2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({

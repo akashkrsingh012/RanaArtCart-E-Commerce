@@ -104,15 +104,15 @@ export default function LoginPage() {
 
         <div className="text-center text-muted-foreground mt-4">
           <p className="mb-2">Don't have an account?</p>
-          {isSeller ? (
-            <Link href="/seller/register" className="text-primary font-semibold hover:underline block">
-              Register as a Seller
-            </Link>
-          ) : (
-            <Link href="/signup" className="text-primary font-semibold hover:underline block">
+          <div className="flex items-center justify-center gap-4">
+            <Link href="/signup" className="text-primary font-semibold hover:underline">
               Sign up as a User
             </Link>
-          )}
+            <span>|</span>
+            <Link href="/seller/register" className="text-primary font-semibold hover:underline">
+              Sign up as a Seller
+            </Link>
+          </div>
 
         </div>
 

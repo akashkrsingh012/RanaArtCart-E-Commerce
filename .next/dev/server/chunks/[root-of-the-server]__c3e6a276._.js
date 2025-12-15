@@ -132,6 +132,10 @@ const ProductSchema = new __TURBOPACK__imported__module__$5b$externals$5d2f$mong
         type: Number,
         required: true
     },
+    discountPrice: {
+        type: Number,
+        default: 0
+    },
     stock: {
         type: Number,
         required: true

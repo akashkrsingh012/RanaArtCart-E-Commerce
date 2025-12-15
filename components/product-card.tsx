@@ -26,7 +26,10 @@ export default function ProductCard({ product }: ProductCardProps) {
   const router = useRouter()
   // Local state for add-to-cart feedback only
   const [isAdded, setIsAdded] = useState(false)
-  const discount = Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
+  const discount =
+    product.originalPrice > product.price
+      ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
+      : 0
 
   const isWishlisted = user?.wishlist?.includes(product.id) || false
 
@@ -115,9 +118,11 @@ export default function ProductCard({ product }: ProductCardProps) {
 
           <div className="flex items-end gap-2 mb-4 mt-auto">
             <span className="text-lg font-bold text-primary">₹{product.price.toLocaleString("en-IN")}</span>
-            <span className="text-sm text-muted-foreground line-through mb-0.5">
-              ₹{product.originalPrice.toLocaleString("en-IN")}
-            </span>
+            {product.originalPrice > product.price && (
+              <span className="text-sm text-muted-foreground line-through mb-0.5">
+                ₹{product.originalPrice.toLocaleString("en-IN")}
+              </span>
+            )}
           </div>
 
           <div className="grid grid-cols-2 gap-2 mt-2">

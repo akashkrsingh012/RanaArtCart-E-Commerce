@@ -144,6 +144,10 @@ const ProductSchema = new __TURBOPACK__imported__module__$5b$externals$5d2f$mong
         type: Number,
         required: true
     },
+    discountPrice: {
+        type: Number,
+        default: 0
+    },
     stock: {
         type: Number,
         required: true
@@ -306,6 +310,7 @@ async function POST(request) {
         const stock = formData.get("stock");
         const category = formData.get("category");
         const imageFile = formData.get("image");
+        const discountPrice = formData.get("discountPrice");
         console.log("Form data received:", {
             name,
             description,
@@ -354,6 +359,7 @@ async function POST(request) {
             name,
             description,
             price: Number(price),
+            discountPrice: Number(discountPrice) || 0,
             stock: Number(stock),
             category,
             image: imageUrl,

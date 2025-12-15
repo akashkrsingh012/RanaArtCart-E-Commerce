@@ -54,7 +54,7 @@ export default function Header({ cartOpen, onCartToggle }: HeaderProps) {
           </div>
           <div className="flex items-center gap-2 opacity-90 hover:opacity-100 transition-opacity">
             <Phone size={13} className="text-orange-400" />
-            <span>Support: +91 98765 43210</span>
+            <span>Support: +91 6204349055</span>
           </div>
         </div>
       </div>

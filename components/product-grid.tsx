@@ -36,7 +36,7 @@ export default function ProductGrid({ selectedCategory }: ProductGridProps) {
           name: p.name,
           category: p.category,
           price: p.price,
-          originalPrice: p.price * 1.2, // Mock original price
+          originalPrice: p.discountPrice || 0,
           image: p.image,
           rating: 4.5, // Mock rating
           reviews: 0, // Mock reviews
