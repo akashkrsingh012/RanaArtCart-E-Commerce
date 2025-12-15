@@ -2,8 +2,6 @@
 import { NextResponse } from "next/server"
 import { headers, cookies } from "next/headers"
 import jwt from "jsonwebtoken"
-import { writeFile, mkdir } from "fs/promises"
-import path from "path"
 import { connectToDatabase } from "@/lib/mongodb"
 import Product from "@/models/Product"
 import Seller from "@/models/Seller"
@@ -65,22 +63,12 @@ export async function POST(request) {
             return NextResponse.json({ error: "Image file is required." }, { status: 400 })
         }
 
+        // Convert image to Base64
         const buffer = Buffer.from(await imageFile.arrayBuffer())
-        const filename = `${Date.now()}-${imageFile.name.replace(/\s/g, "_")}`
-        const uploadDir = path.join(process.cwd(), "public/uploads")
+        const base64Image = buffer.toString("base64")
+        const imageUrl = `data:${imageFile.type};base64,${base64Image}`
 
-        console.log("Saving image to:", uploadDir);
-        try {
-            await mkdir(uploadDir, { recursive: true })
-        } catch (e) {
-            // Ignore if exists
-        }
-
-        const filepath = path.join(uploadDir, filename)
-        await writeFile(filepath, buffer)
-        console.log("Image saved.");
-
-        const imageUrl = `/uploads/${filename}`
+        console.log("Image converted to Base64.");
 
         await connectToDatabase()
         console.log("DB connected.");
@@ -100,7 +88,7 @@ export async function POST(request) {
             discountPrice: Number(discountPrice) || 0,
             stock: Number(stock),
             category,
-            image: imageUrl,
+            image: imageUrl, // Store as Base64 string
             sellerId,
         })
         console.log("Product created:", newProduct._id);
