@@ -46,7 +46,7 @@ export default function Hero() {
                 href="#products"
                 className="bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-3.5 rounded-full font-semibold hover:bg-white/20 transition-all duration-300 inline-block text-center"
               >
-                View Collections
+                View Collection
               </Link>
             </div>
           </div>
